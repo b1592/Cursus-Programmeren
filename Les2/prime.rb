@@ -1,0 +1,3 @@
+def prime?
+  # Algoritme...
+end
