@@ -3,13 +3,13 @@ require_relative "cipher"
 
 class CipherTest < MiniTest::Unit::TestCase
   def test_a_shift_of_3
-    mapping = build_hash(3)
-    assert_equal( "d", mapping["a"] )
+    cipher = build_cipher(3)
+    assert_equal( "d", cipher["a"] )
   end
 
   def test_the_letter_z
-    mapping = build_hash(3)
-    assert_equal( "c", mapping["z"]  )
+    cipher = build_cipher(3)
+    assert_equal( "b", cipher["z"]  )
   end
 
   def test_encrypt_string_with_shift_3
