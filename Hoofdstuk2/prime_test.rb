@@ -7,14 +7,17 @@ class PrimeTest < MiniTest::Unit::TestCase
   end
 
   def test_a_composite_number
+    skip
     assert_equal( false, prime?(22) )
   end
 
   def test_1
+    skip
     assert_equal( false, prime?(1) )
   end
 
   def test_2
+    skip
     assert_equal( true, prime?(2) )
   end
 end
